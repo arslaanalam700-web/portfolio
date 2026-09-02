@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>Arslaan Alam | Software Developer & Data Analyst (AI/ML)</title>
+  <meta name="description" content="Portfolio of Arslaan Alam - Software Developer and Data Analyst specializing in Python, SQL, Java, AI/ML, and interactive data visualization dashboards.">
+  <meta name="keywords" content="Arslaan Alam, Software Developer, Data Analyst, Python, SQL, Java, Power BI, Streamlit, Ferry Analytics, Lucknow">
+  <meta name="author" content="Arslaan Alam">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arslaan Alam | Software Developer & Data Analyst">
+  <meta property="og:description" content="Explore interactive dashboards, real-world data analytics simulations, and software engineering projects by Arslaan Alam.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Cache-Busted Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=20260902_aurora_99">
+  
+  <!-- Direct Inline Theme Guarantee (Bypasses all browser caching) -->
+  <style id="portfolio-master-theme">
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+
+    /* === SHARED TYPOGRAPHY & TRANSITIONS === */
+    body {
+      font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    h1, h2, h3, h4, h5, h6, .nav-brand {
+      font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* === 🌙 DARK THEME (Default) === */
+    html:not([data-theme="light"]),
+    [data-theme="dark"] {
+      --bg-primary: #0a0e17;
+      --bg-secondary: #0f1422;
+      --bg-tertiary: #151c2e;
+      --bg-elevated: #1c263d;
+      --border-subtle: rgba(255, 255, 255, 0.09);
+      --border-medium: rgba(255, 255, 255, 0.16);
+      --border-bright: rgba(0, 242, 254, 0.45);
+      --text-primary: #ffffff;
+      --text-secondary: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent-amber: #00f2fe;
+      --accent-gold: #38bdf8;
+      --accent-cyan: #00f2fe;
+    }
+
+    html:not([data-theme="light"]) body,
+    [data-theme="dark"] body {
+      background-color: #0a0e17;
+      background-image: 
+        radial-gradient(ellipse 90% 60% at 50% -10%, rgba(99, 102, 241, 0.22), transparent 70%),
+        radial-gradient(ellipse 70% 50% at 100% 30%, rgba(0, 242, 254, 0.16), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 0% 70%, rgba(56, 189, 248, 0.14), transparent 60%);
+      background-attachment: fixed;
+      color: #e2e8f0;
+    }
+
+    html:not([data-theme="light"]) h1, html:not([data-theme="light"]) h2, html:not([data-theme="light"]) h3,
+    html:not([data-theme="light"]) h4, html:not([data-theme="light"]) h5, html:not([data-theme="light"]) h6,
+    [data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3,
+    [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6 {
+      color: #ffffff;
+    }
+
+    html:not([data-theme="light"]) .hero-name, [data-theme="dark"] .hero-name { color: #ffffff; }
+    html:not([data-theme="light"]) .hero-description, [data-theme="dark"] .hero-description { color: #e2e8f0; }
+    html:not([data-theme="light"]) .hero-description strong, [data-theme="dark"] .hero-description strong { color: #ffffff; }
+
+    /* Dark Toolbar */
+    html:not([data-theme="light"]) .nav-dock,
+    [data-theme="dark"] .nav-dock {
+      background: rgba(15, 20, 34, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.6);
+    }
+    html:not([data-theme="light"]) .nav-brand, [data-theme="dark"] .nav-brand { color: #ffffff; }
+    html:not([data-theme="light"]) .brand-avatar, [data-theme="dark"] .brand-avatar {
+      background: linear-gradient(135deg, #00f2fe, #6366f1);
+      color: #ffffff;
+    }
+    html:not([data-theme="light"]) .nav-link, [data-theme="dark"] .nav-link { color: #94a3b8; }
+    html:not([data-theme="light"]) .nav-link:hover, html:not([data-theme="light"]) .nav-link.active,
+    [data-theme="dark"] .nav-link:hover, [data-theme="dark"] .nav-link.active {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.09);
+    }
+    html:not([data-theme="light"]) .icon-btn, [data-theme="dark"] .icon-btn {
+      color: #cbd5e1;
+      border-color: rgba(255, 255, 255, 0.12);
+      background: transparent;
+    }
+    html:not([data-theme="light"]) .icon-btn:hover, [data-theme="dark"] .icon-btn:hover {
+      background: #1c263d;
+      color: #00f2fe;
+      border-color: #00f2fe;
+    }
+    html:not([data-theme="light"]) .cmd-badge-btn, [data-theme="dark"] .cmd-badge-btn {
+      background: #151c2e;
+      border-color: rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+    }
+    html:not([data-theme="light"]) .cmd-badge-btn kbd, [data-theme="dark"] .cmd-badge-btn kbd {
+      background: #1c263d;
+      border-color: rgba(255, 255, 255, 0.18);
+      color: #ffffff;
+    }
+
+    /* Dark Components */
+    html:not([data-theme="light"]) .project-card, [data-theme="dark"] .project-card,
+    html:not([data-theme="light"]) .stat-card, [data-theme="dark"] .stat-card,
+    html:not([data-theme="light"]) .timeline-card, [data-theme="dark"] .timeline-card,
+    html:not([data-theme="light"]) .cert-card, [data-theme="dark"] .cert-card,
+    html:not([data-theme="light"]) .contact-info-card, [data-theme="dark"] .contact-info-card,
+    html:not([data-theme="light"]) .contact-form-card, [data-theme="dark"] .contact-form-card {
+      background: linear-gradient(145deg, rgba(21, 28, 46, 0.85) 0%, rgba(15, 20, 34, 0.72) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 16px 40px -12px rgba(0, 0, 0, 0.75);
+    }
+    html:not([data-theme="light"]) .project-title, [data-theme="dark"] .project-title { color: #ffffff; }
+    html:not([data-theme="light"]) .project-desc, [data-theme="dark"] .project-desc { color: #e2e8f0; }
+    html:not([data-theme="light"]) .btn-secondary, [data-theme="dark"] .btn-secondary {
+      background: rgba(21, 28, 46, 0.85);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    html:not([data-theme="light"]) .btn-outline, [data-theme="dark"] .btn-outline {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* === ☀️ LIGHT THEME (Pristine Swiss Tech Studio) === */
+    [data-theme="light"] {
+      --bg-primary: #f8fafc;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #f1f5f9;
+      --bg-elevated: #e2e8f0;
+      --border-subtle: rgba(15, 23, 42, 0.08);
+      --border-medium: rgba(15, 23, 42, 0.14);
+      --border-bright: rgba(2, 132, 199, 0.45);
+      --text-primary: #0f172a;
+      --text-secondary: #334155;
+      --text-muted: #64748b;
+      --accent-amber: #0284c7;
+      --accent-gold: #0369a1;
+      --accent-cyan: #0284c7;
+    }
+
+    [data-theme="light"] body {
+      background-color: #f8fafc !important;
+      background-image: 
+        radial-gradient(ellipse 90% 60% at 50% -10%, rgba(14, 165, 233, 0.09), transparent 70%),
+        radial-gradient(ellipse 70% 50% at 100% 30%, rgba(99, 102, 241, 0.07), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 0% 70%, rgba(2, 132, 199, 0.06), transparent 60%) !important;
+      background-attachment: fixed !important;
+      color: #334155 !important;
+    }
+
+    [data-theme="light"] h1, [data-theme="light"] h2, [data-theme="light"] h3,
+    [data-theme="light"] h4, [data-theme="light"] h5, [data-theme="light"] h6 {
+      color: #0f172a !important;
+    }
+
+    [data-theme="light"] .hero-name { color: #0f172a !important; }
+    [data-theme="light"] .hero-description { color: #334155 !important; }
+    [data-theme="light"] .hero-description strong { color: #0f172a !important; }
+
+    /* Light Mode Toolbar (Navigation Dock) */
+    [data-theme="light"] .nav-dock {
+      background: rgba(255, 255, 255, 0.94) !important;
+      backdrop-filter: blur(20px) !important;
+      -webkit-backdrop-filter: blur(20px) !important;
+      border: 1px solid rgba(15, 23, 42, 0.12) !important;
+      box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.12) !important;
+    }
+    [data-theme="light"] .nav-brand {
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .brand-avatar {
+      background: linear-gradient(135deg, #0284c7, #2563eb) !important;
+      color: #ffffff !important;
+    }
+    [data-theme="light"] .nav-link {
+      color: #475569 !important;
+    }
+    [data-theme="light"] .nav-link:hover,
+    [data-theme="light"] .nav-link.active {
+      color: #0284c7 !important;
+      background: rgba(2, 132, 199, 0.09) !important;
+    }
+    [data-theme="light"] .icon-btn {
+      color: #334155 !important;
+      background: #ffffff !important;
+      border: 1px solid rgba(15, 23, 42, 0.14) !important;
+    }
+    [data-theme="light"] .icon-btn:hover {
+      background: #f1f5f9 !important;
+      color: #0284c7 !important;
+      border-color: #0284c7 !important;
+    }
+    [data-theme="light"] .cmd-badge-btn {
+      background: #f1f5f9 !important;
+      border: 1px solid rgba(15, 23, 42, 0.14) !important;
+      color: #334155 !important;
+    }
+    [data-theme="light"] .cmd-badge-btn kbd {
+      background: #ffffff !important;
+      border: 1px solid rgba(15, 23, 42, 0.18) !important;
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .cmd-badge-btn:hover {
+      color: #0284c7 !important;
+      border-color: #0284c7 !important;
+    }
+
+    /* Light Mode Cards */
+    [data-theme="light"] .project-card,
+    [data-theme="light"] .stat-card,
+    [data-theme="light"] .timeline-card,
+    [data-theme="light"] .cert-card,
+    [data-theme="light"] .contact-info-card,
+    [data-theme="light"] .contact-form-card {
+      background: #ffffff !important;
+      border: 1px solid rgba(15, 23, 42, 0.1) !important;
+      box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.07) !important;
+    }
+    [data-theme="light"] .project-card:hover {
+      border-color: rgba(2, 132, 199, 0.5) !important;
+      box-shadow: 0 16px 36px -8px rgba(2, 132, 199, 0.15) !important;
+    }
+    [data-theme="light"] .project-title,
+    [data-theme="light"] .timeline-role,
+    [data-theme="light"] .cert-title,
+    [data-theme="light"] .direct-value {
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .project-desc,
+    [data-theme="light"] .timeline-bullets li,
+    [data-theme="light"] .section-subtitle,
+    [data-theme="light"] .stat-label,
+    [data-theme="light"] .cert-issuer,
+    [data-theme="light"] .form-label {
+      color: #334155 !important;
+    }
+    [data-theme="light"] .project-category,
+    [data-theme="light"] .timeline-org,
+    [data-theme="light"] .cert-date {
+      color: #0284c7 !important;
+    }
+    [data-theme="light"] .metric-chip {
+      background: #f1f5f9 !important;
+      border: 1px solid rgba(15, 23, 42, 0.1) !important;
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .metric-chip span.label { color: #64748b !important; }
+    [data-theme="light"] .metric-chip span.val { color: #0284c7 !important; }
+    [data-theme="light"] .tech-tag {
+      background: #f1f5f9 !important;
+      border: 1px solid rgba(15, 23, 42, 0.12) !important;
+      color: #334155 !important;
+    }
+    [data-theme="light"] .section-tag {
+      color: #0284c7 !important;
+      background: rgba(2, 132, 199, 0.1) !important;
+      border: 1px solid rgba(2, 132, 199, 0.3) !important;
+    }
+    [data-theme="light"] .section-tag::before {
+      background-color: #0284c7 !important;
+      box-shadow: 0 0 8px #0284c7 !important;
+    }
+    [data-theme="light"] .btn-secondary {
+      background: #ffffff !important;
+      color: #0f172a !important;
+      border: 1px solid rgba(15, 23, 42, 0.16) !important;
+    }
+    [data-theme="light"] .btn-secondary:hover {
+      background: #f1f5f9 !important;
+      border-color: #0284c7 !important;
+    }
+    [data-theme="light"] .btn-outline {
+      background: transparent !important;
+      color: #0f172a !important;
+      border: 1px solid rgba(15, 23, 42, 0.2) !important;
+    }
+    [data-theme="light"] .btn-outline:hover {
+      background: rgba(15, 23, 42, 0.05) !important;
+      border-color: #0284c7 !important;
+      color: #0284c7 !important;
+    }
+    [data-theme="light"] .contact-direct-item {
+      background: #f8fafc !important;
+      border: 1px solid rgba(15, 23, 42, 0.1) !important;
+    }
+    [data-theme="light"] .form-input,
+    [data-theme="light"] .form-textarea {
+      background: #f8fafc !important;
+      border: 1px solid rgba(15, 23, 42, 0.15) !important;
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .form-input:focus,
+    [data-theme="light"] .form-textarea:focus {
+      border-color: #0284c7 !important;
+      box-shadow: 0 0 15px rgba(2, 132, 199, 0.2) !important;
+    }
+    [data-theme="light"] .copy-btn {
+      background: transparent !important;
+      border: 1px solid rgba(15, 23, 42, 0.15) !important;
+      color: #334155 !important;
+    }
+    [data-theme="light"] .copy-btn:hover {
+      color: #0284c7 !important;
+      border-color: #0284c7 !important;
+    }
+
+    /* Common elements */
+    .hero-role-wrapper {
+      background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 50%, #818cf8 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      color: transparent !important;
+    }
+    .role-typing-cursor {
+      background-color: #00f2fe !important;
+      box-shadow: 0 0 12px #00f2fe !important;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 45%, #6366f1 100%) !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      box-shadow: 0 10px 28px -6px rgba(0, 242, 254, 0.5) !important;
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #00d2de 0%, #0284c7 45%, #4f46e5 100%) !important;
+      color: #ffffff !important;
+    }
+    .stat-number {
+      background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 60%, #818cf8 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+    }
+
+    /* === 🚁 CINEMATIC FPV DRONE CONTINUOUS TRACKING SHOT STAGE (16:9 8K ARCHITECTURAL DIGEST STUDIO) === */
+    .drone-camera-stage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+      perspective: 1200px;
+      background-color: #080c14;
+    }
+
+    .drone-camera-rig {
+      position: absolute;
+      top: -5%;
+      left: -5%;
+      width: 110%;
+      height: 110%;
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform 0.12s cubic-bezier(0.1, 0.9, 0.2, 1);
+    }
+
+    .drone-shot-plane {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      will-change: transform, opacity;
+      backface-visibility: hidden;
+      transition: opacity 0.35s ease-out;
+    }
+
+    /* Shot 1: Dark rain-kissed penthouse deck looking through open industrial steel portal */
+    .drone-shot-1 {
+      background-image: url('ml_sanctum_1.jpg');
+      opacity: 1;
+      z-index: 1;
+      transform-origin: center center;
+      transform: scale(1.0);
+    }
+
+    /* Shot 2: Gliding down center of ML workspace past server racks & wet floor reflections */
+    .drone-shot-2 {
+      background-image: url('ml_sanctum_2.jpg');
+      opacity: 0;
+      z-index: 2;
+      transform-origin: center center;
+      transform: scale(0.95);
+    }
+
+    /* Shot 3: Decelerating framing triple-monitor PyTorch loss curves & liquid-cooled GPU rig */
+    .drone-shot-3 {
+      background-image: url('ml_sanctum_3.jpg');
+      opacity: 0;
+      z-index: 3;
+      transform-origin: center 52%;
+      transform: scale(0.93);
+    }
+
+    #live-bg-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    /* UI/UX Moody Dark-Mode Scrim with Subtle Indigo Rim Lighting */
+    .drone-lighting-scrim {
+      position: absolute;
+      inset: 0;
+      z-index: 5;
+      background: 
+        radial-gradient(ellipse 88% 72% at 50% 45%, rgba(6, 9, 16, 0.54) 0%, rgba(6, 9, 16, 0.85) 65%, #060910 100%),
+        linear-gradient(180deg, rgba(6, 9, 16, 0.42) 0%, rgba(99, 102, 241, 0.05) 50%, rgba(6, 9, 16, 0.88) 100%);
+      pointer-events: none;
+    }
+
+    /* UI/UX Cinematic Camera HUD Overlay */
+    .drone-cinema-hud {
+      position: absolute;
+      top: 1.5rem;
+      left: 2rem;
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-family: var(--font-mono, monospace);
+      font-size: 0.72rem;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 0.08em;
+      pointer-events: none;
+    }
+
+    .drone-hud-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(15, 23, 42, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+    }
+
+    .drone-rec-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef4444;
+      box-shadow: 0 0 10px #ef4444;
+      animation: droneRecBlink 1.4s infinite;
+    }
+
+    @keyframes droneRecBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.25; }
+    }
+
+    .drone-hud-lens {
+      color: #38bdf8;
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+    }
+
+    @media (max-width: 820px) {
+      .drone-cinema-hud {
+        display: none;
+      }
+    }
+
+    /* UI/UX Floating Flight Trajectory Radar & Scroll HUD */
+    .scroll-hud-track {
+      position: fixed;
+      right: 1.25rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 160px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      z-index: 998;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .scroll-hud-indicator {
+      width: 100%;
+      height: 0%;
+      background: linear-gradient(to bottom, #fbbf24, #f59e0b, #00f2fe);
+      border-radius: 999px;
+      box-shadow: 0 0 10px #fbbf24;
+      transition: height 0.1s linear;
+    }
+
+    /* Light Mode Overrides for Drone Stage */
+    [data-theme="light"] .drone-camera-stage {
+      background-color: #f8fafc !important;
+    }
+    [data-theme="light"] .drone-lighting-scrim {
+      background: 
+        radial-gradient(ellipse 85% 70% at 50% 45%, rgba(248, 250, 252, 0.75) 0%, rgba(248, 250, 252, 0.94) 65%, #f8fafc 100%),
+        linear-gradient(180deg, rgba(248, 250, 252, 0.6) 0%, rgba(2, 132, 199, 0.04) 50%, rgba(248, 250, 252, 0.9) 100%) !important;
+    }
+    [data-theme="light"] .drone-hud-badge {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(15, 23, 42, 0.12) !important;
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .drone-hud-lens {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(2, 132, 199, 0.3) !important;
+      color: #0284c7 !important;
+    }
+    [data-theme="light"] .scroll-hud-track {
+      background: rgba(15, 23, 42, 0.12) !important;
+    }
+    [data-theme="light"] .scroll-hud-indicator {
+      background: linear-gradient(to bottom, #d97706, #0284c7) !important;
+      box-shadow: 0 0 8px rgba(2, 132, 199, 0.5) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Subtle Ambient Noise Texture -->
+  <div class="noise-overlay"></div>
+
+  <!-- === 🚁 CINEMATIC UE5 ML SANCTUM TRACKING SHOT (RAIN TERRACE ➔ TRIPLE-MONITOR PYTORCH RIG) === -->
+  <div class="drone-camera-stage" id="drone-stage" aria-hidden="true">
+    <!-- Camera Viewport Container with 3D Perspective & Gimbal Tilt -->
+    <div class="drone-camera-rig" id="drone-rig">
+      <!-- Shot 1: Dark rain-kissed penthouse terrace looking through open industrial steel portal -->
+      <div class="drone-shot-plane drone-shot-1" id="drone-shot-1"></div>
+
+      <!-- Shot 2: Gliding down center of ML workspace past server racks & floor reflections -->
+      <div class="drone-shot-plane drone-shot-2" id="drone-shot-2"></div>
+
+      <!-- Shot 3: Decelerating framing triple-monitor PyTorch loss curves & liquid-cooled GPU rig -->
+      <div class="drone-shot-plane drone-shot-3" id="drone-shot-3"></div>
+
+      <!-- Atmospheric Ambient Rain Streaks & Indigo/Amber Light Motes Canvas -->
+      <canvas id="live-bg-canvas"></canvas>
+    </div>
+
+    <!-- UI/UX Moody Dark-Mode Scrim with Subtle Indigo Rim Lighting -->
+    <div class="drone-lighting-scrim"></div>
+
+    <!-- UI/UX Cinematic Camera HUD Overlay -->
+    <div class="drone-cinema-hud">
+      <div class="drone-hud-badge">
+        <span class="drone-rec-dot"></span>
+        <span class="drone-rec-text">UE5 // ML SANCTUM</span>
+      </div>
+      <div class="drone-hud-lens" id="drone-hud-lens">18mm F2.0 • RAIN-KISSED TERRACE PORTAL</div>
+    </div>
+  </div>
+
+  <!-- UI/UX Floating Flight Trajectory Radar & Scroll HUD -->
+  <div class="scroll-hud-track" aria-hidden="true">
+    <div class="scroll-hud-indicator" id="scroll-hud-indicator"></div>
+  </div>
+
+  <!-- Custom Magnetic Cursor (Desktop) -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+
+  <!-- Floating Navigation Dock -->
+  <header class="site-header">
+    <nav class="nav-dock" aria-label="Main Navigation">
+      <a href="#" class="nav-brand" title="Arslaan Alam Portfolio">
+        <div class="brand-avatar">AA</div>
+        <span>Arslaan Alam</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#data-lab" class="nav-link">Data Lab</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Timeline</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Command Palette Trigger -->
+        <button class="cmd-badge-btn" id="cmd-palette-btn" title="Open Command Palette (Ctrl+K)">
+          <span>Search</span>
+          <kbd>⌘K</kbd>
+        </button>
+
+        <!-- Audio Sound Toggle -->
+        <button class="icon-btn" id="sound-toggle-btn" title="Toggle Tactile UI Audio Feedback" aria-label="Toggle Sound">
+          <span id="sound-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <line x1="23" y1="9" x2="17" y2="15"></line>
+              <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+          </span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="icon-btn" id="theme-toggle-btn" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Dynamic Interactive Canvas -->
+  <section class="hero-section" id="hero">
+
+    <div class="container hero-content">
+      <div class="status-badge reveal-init">
+        <span class="status-dot"></span>
+        <span>Open to Software Engineering & Data Analyst Roles</span>
+      </div>
+
+      <h1 class="hero-title reveal-init">
+        <span class="hero-name">Arslaan Alam</span>
+        <span class="hero-role-wrapper">
+          <span id="role-type-target">Software Developer</span><span class="role-typing-cursor"></span>
+        </span>
+      </h1>
+
+      <p class="hero-description reveal-init">
+        Results-driven Software Developer & Data Analyst who turns raw data and AI research into production-ready systems — from <strong>ETL pipelines processing 50,000+ records at 99%+ accuracy</strong> to a <strong>5-agent Hybrid RAG chatbot built on Google Gemini 3.5 Flash</strong>. Skilled across Python, Java, SQL, Power BI, and Streamlit.
+      </p>
+
+      <div class="hero-actions reveal-init">
+        <a href="#data-lab" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"></path>
+          </svg>
+          <span>Launch Live Data Lab</span>
+        </a>
+
+        <a href="#projects" class="btn btn-secondary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span>View Featured Projects</span>
+        </a>
+
+        <a href="resume_ats_optimized.html" target="_blank" class="btn btn-outline" title="Open ATS-Optimized Resume (98/100 Score)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>ATS Resume (98%)</span>
+        </a>
+
+        <a href="Arslaan_Alam_Resume.pdf" download="Arslaan_Alam_Resume.pdf" class="btn btn-outline" title="Download Official Resume PDF">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Impact Live Stats Strip -->
+  <div class="container stats-strip">
+    <div class="stats-grid">
+      <div class="stat-card reveal-init">
+        <div class="stat-number" data-target="50" data-suffix="K+">0</div>
+        <div class="stat-label">Records Processed via ETL Pipelines (99%+ Accuracy)</div>
+      </div>
+      <div class="stat-card reveal-init">
+        <div class="stat-number" data-target="5" data-suffix="-Agent">0</div>
+        <div class="stat-label">Hybrid RAG Architecture (Gemini 3.5 Flash + ChromaDB)</div>
+      </div>
+      <div class="stat-card reveal-init">
+        <div class="stat-number" data-target="15" data-suffix="+ KPIs">0</div>
+        <div class="stat-label">Monitored on Power BI Dashboards (-30% Latency)</div>
+      </div>
+      <div class="stat-card reveal-init">
+        <div class="stat-number" data-target="10" data-suffix=" Yrs">0</div>
+        <div class="stat-label">Ferry Dataset Operational Analytics (2015–2025)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Projects Showcase -->
+  <section id="projects">
+    <div class="container">
+      <span class="section-tag">Engineered Solutions</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">Production-ready GenAI architectures, multi-source RAG systems, and operational metric frameworks.</p>
+
+      <div class="projects-grid">
+        <!-- Project 1: BrewMind Cafe -->
+        <div class="project-card reveal-init">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">Generative AI, Hybrid RAG & 5-Agent Architecture</span>
+              <h3 class="project-title">BrewMind Café — AI-Powered Hybrid RAG Chatbot</h3>
+            </div>
+
+            <p class="project-desc">
+              Architected a hybrid RAG pipeline combining <strong>ChromaDB vector search</strong> with <strong>BM25 lexical search</strong>, fused via <strong>Reciprocal Rank Fusion (RRF)</strong> and refined with <strong>cross-encoder neural reranking</strong> (SentenceTransformers all-MiniLM-L6-v2). Designed a <strong>5-agent architecture</strong> (Planner, Retriever, Writer, Verifier, Editor) with a self-correction loop and claim-level citations using <strong>Google Gemini 3.5 Flash</strong>. Built multi-model failover routing and singleton caching layer deployed on <strong>Streamlit Cloud</strong>.
+            </p>
+
+            <div class="project-metrics-chips">
+              <div class="metric-chip"><span class="label">Hybrid RAG:</span> <span class="val">ChromaDB + BM25 + RRF</span></div>
+              <div class="metric-chip"><span class="label">Multi-Agent:</span> <span class="val">5-Agent Self-Correction</span></div>
+              <div class="metric-chip"><span class="label">Model:</span> <span class="val">Gemini 3.5 Flash</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Google Gemini 3.5 Flash</span>
+              <span class="tech-tag">Hybrid RAG</span>
+              <span class="tech-tag">ChromaDB</span>
+              <span class="tech-tag">BM25</span>
+              <span class="tech-tag">Cross-Encoder Reranking</span>
+              <span class="tech-tag">SentenceTransformers</span>
+              <span class="tech-tag">Streamlit</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://brewmind-cafe.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Launch Live Streamlit App ☕</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub Source</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Preview Box -->
+          <div class="project-preview-box">
+            <div class="preview-window-bar">
+              <div class="preview-dots">
+                <span class="preview-dot red"></span>
+                <span class="preview-dot yellow"></span>
+                <span class="preview-dot green"></span>
+              </div>
+              <span class="preview-badge">brewmind_rag_agent.py</span>
+            </div>
+
+            <div class="preview-interactive-canvas">
+              <div style="background: rgba(15, 20, 34, 0.85); border: 1px solid var(--border-medium); border-radius: 8px; padding: 0.85rem; font-family: var(--font-mono); font-size: 0.78rem;">
+                <div style="color: #00f2fe; margin-bottom: 0.35rem; display: flex; align-items: center; justify-content: space-between;">
+                  <span>☕ ADK Concierge Match</span>
+                  <span style="color: #10b981; font-size: 0.7rem;">Grounded RAG (98%)</span>
+                </div>
+                <div style="color: #ffffff; font-weight: 600; margin-bottom: 0.25rem;">Nitro Silk Cold Brew</div>
+                <div style="color: #cbd5e1; font-size: 0.72rem; margin-bottom: 0.5rem; line-height: 1.4;">
+                  Cold-steeped 18hrs • High Caffeine • Zero Dairy • Low Acidity • Budget Compliant (&lt;₹250)
+                </div>
+                <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                  <span style="background: rgba(0, 242, 254, 0.15); color: #00f2fe; padding: 2px 6px; border-radius: 4px; font-size: 0.68rem;">Allergen-Safe</span>
+                  <span style="background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 2px 6px; border-radius: 4px; font-size: 0.68rem;">RAG Verified</span>
+                  <span style="background: rgba(99, 102, 241, 0.18); color: #818cf8; padding: 2px 6px; border-radius: 4px; font-size: 0.68rem;">Google ADK</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Ferry Analytics -->
+        <div class="project-card reveal-init">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">Operational Analytics & KPI Engineering</span>
+              <h3 class="project-title">Ferry Analytics — Ferry Capacity Utilization & Operational Efficiency Dashboard</h3>
+            </div>
+
+            <p class="project-desc">
+              Built and deployed a comprehensive interactive dashboard analyzing ticket sales and redemption data across Jack Layton Ferry Terminal, Centre Island, Hanlan's Point, and Ward's Island (Toronto), spanning 2015–2025. Engineered custom KPI metrics to proactively identify congestion pressure and idle capacity periods.
+            </p>
+
+            <div class="project-metrics-chips">
+              <div class="metric-chip"><span class="label">Metrics:</span> <span class="val">Capacity Utilization</span></div>
+              <div class="metric-chip"><span class="label">KPI:</span> <span class="val">Congestion Pressure Index</span></div>
+              <div class="metric-chip"><span class="label">Score:</span> <span class="val">Peak OLI & Variability</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Plotly</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">Data Visualization</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#data-lab" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>
+                <span>Test Live in Data Lab</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub Source</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Preview Box -->
+          <div class="project-preview-box">
+            <div class="preview-window-bar">
+              <div class="preview-dots">
+                <span class="preview-dot red"></span>
+                <span class="preview-dot yellow"></span>
+                <span class="preview-dot green"></span>
+              </div>
+              <span class="preview-badge">ferry_analytics_v2.5.py</span>
+            </div>
+
+            <div class="preview-interactive-canvas">
+              <div class="mini-viz-container">
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Jack Layton</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 88%;"></div></div>
+                  <span class="mini-bar-val">88%</span>
+                </div>
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Centre Island</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 94%;"></div></div>
+                  <span class="mini-bar-val">94%</span>
+                </div>
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Hanlan's Point</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 62%;"></div></div>
+                  <span class="mini-bar-val">62%</span>
+                </div>
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Ward's Island</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 45%;"></div></div>
+                  <span class="mini-bar-val">45%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: UK Top 50 Music Dashboard -->
+        <div class="project-card reveal-init">
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-category">Real-Time Data Streaming & Audio Analytics</span>
+              <h3 class="project-title">UK Top 50 Music Dashboard</h3>
+            </div>
+
+            <p class="project-desc">
+              Designed and developed an interactive music analytics dashboard using Python, Streamlit, Pandas, and Plotly. Provides insights into UK Top 50 chart rankings, artist popularity shifts, and acoustic audio features through dynamic, real-time visualizations deployed as a live web application.
+            </p>
+
+            <div class="project-metrics-chips">
+              <div class="metric-chip"><span class="label">Scope:</span> <span class="val">UK Top 50 Chart Data</span></div>
+              <div class="metric-chip"><span class="label">Dimensions:</span> <span class="val">Energy vs. Danceability</span></div>
+              <div class="metric-chip"><span class="label">Viz Engine:</span> <span class="val">Plotly Express</span></div>
+            </div>
+
+            <div class="project-tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Plotly</span>
+              <span class="tech-tag">Data Visualization</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#data-lab" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>
+                <span>Explore Music Model</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub Source</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Preview Box -->
+          <div class="project-preview-box">
+            <div class="preview-window-bar">
+              <div class="preview-dots">
+                <span class="preview-dot red"></span>
+                <span class="preview-dot yellow"></span>
+                <span class="preview-dot green"></span>
+              </div>
+              <span class="preview-badge">music_analytics_plotly.py</span>
+            </div>
+
+            <div class="preview-interactive-canvas">
+              <div class="mini-viz-container">
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Pop Energy</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 82%;"></div></div>
+                  <span class="mini-bar-val">82%</span>
+                </div>
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Danceability</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 91%;"></div></div>
+                  <span class="mini-bar-val">91%</span>
+                </div>
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Acousticness</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 38%;"></div></div>
+                  <span class="mini-bar-val">38%</span>
+                </div>
+                <div class="mini-bar-row">
+                  <span class="mini-bar-label">Valence Index</span>
+                  <div class="mini-bar-track"><div class="mini-bar-fill" style="width: 74%;"></div></div>
+                  <span class="mini-bar-val">74%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Data Lab & Live SQL Playground -->
+  <section class="lab-section" id="data-lab">
+    <div class="container">
+      <span class="section-tag">Interactive Sandbox</span>
+      <h2 class="section-title">Live Data Analytics Lab</h2>
+      <p class="section-subtitle">Test-drive the actual metric calculations, granular interval distributions, and dynamic SQL query generators powering my analytics projects.</p>
+
+      <div class="lab-container reveal-init">
+        <!-- Lab Tabs -->
+        <div class="lab-tabs">
+          <button class="lab-tab active" data-lab-tab="ferry">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/></svg>
+            <span>Ferry Congestion Simulator (Toronto 2015–2025)</span>
+          </button>
+          <button class="lab-tab" data-lab-tab="music">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            <span>UK Top 50 Music Trend Lab</span>
+          </button>
+        </div>
+
+        <div class="lab-grid">
+          <!-- Controls Panel -->
+          <div class="lab-controls-panel">
+            <div class="control-group">
+              <label class="control-label" id="label-terminal-param">Ferry Terminal Station</label>
+              <select class="select-control" id="lab-terminal">
+                <option value="Jack Layton Ferry Terminal">Jack Layton Terminal</option>
+                <option value="Centre Island">Centre Island Station</option>
+                <option value="Hanlan's Point">Hanlan's Point</option>
+                <option value="Ward's Island">Ward's Island</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label">Seasonal Period</label>
+              <select class="select-control" id="lab-season">
+                <option value="Summer">Peak Summer (High Volume)</option>
+                <option value="Spring">Spring / Autumn (Moderate)</option>
+                <option value="Winter">Winter (Low Volume)</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" id="label-granularity-param">Time Granularity</label>
+              <select class="select-control" id="lab-granularity">
+                <option value="Hourly">Hourly Window</option>
+                <option value="15-min">15-Minute Interval</option>
+                <option value="Daily">Daily Summary</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <div class="control-label">
+                <span>Passenger Volume</span>
+                <span class="val" id="lab-load-val">2,400 pax</span>
+              </div>
+              <input type="range" class="range-slider" id="lab-load-slider" min="500" max="4500" step="100" value="2400">
+            </div>
+
+            <div class="control-group">
+              <div class="control-label">
+                <span>Congestion Alert Threshold</span>
+                <span class="val" id="lab-threshold-val">80%</span>
+              </div>
+              <input type="range" class="range-slider" id="lab-threshold-slider" min="50" max="100" step="5" value="80">
+            </div>
+          </div>
+
+          <!-- Visual & SQL Stage -->
+          <div class="lab-viz-panel">
+            <!-- Dynamic KPIs -->
+            <div class="live-kpis-grid">
+              <div class="kpi-card">
+                <div class="kpi-label" id="kpi-label-1">Capacity Utilization</div>
+                <div class="kpi-value" id="kpi-capacity">75%</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label" id="kpi-label-2">Congestion Pressure</div>
+                <div class="kpi-value" id="kpi-congestion">68/100</div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label" id="kpi-label-3">Peak OLI</div>
+                <div class="kpi-value" id="kpi-oli">0.75x</div>
+              </div>
+            </div>
+
+            <!-- Real-time SVG Chart -->
+            <div class="chart-stage">
+              <div class="chart-stage-header">
+                <span class="chart-stage-title" id="lab-chart-title">Capacity Utilization vs. Granular Time Windows</span>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: #00f2fe; font-weight: 600;">LIVE COMPUTED</span>
+              </div>
+              <div class="chart-svg-wrapper" id="lab-chart-svg"></div>
+            </div>
+
+            <!-- Dynamic SQL / Pipeline Generator -->
+            <div class="sql-preview-box">
+              <span class="sql-badge" id="lab-code-badge">SQL GENERATOR</span>
+              <pre id="sql-code-preview">-- SQL Query will appear here</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix & Live Code Inspector -->
+  <section id="skills">
+    <div class="container">
+      <span class="section-tag">Engineering Arsenal</span>
+      <h2 class="section-title">Skills & Technologies</h2>
+      <p class="section-subtitle">Click any skill pill below to inspect real-world implementation code snippets and production patterns.</p>
+
+      <div class="skills-wrapper">
+        <!-- Categories List -->
+        <div class="skills-category-list reveal-init">
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>Programming Languages</span>
+            </h3>
+            <div class="skill-pills-wrap">
+              <button class="skill-pill active" data-skill="Python">Python</button>
+              <button class="skill-pill" data-skill="SQL">SQL</button>
+              <button class="skill-pill" data-skill="Java">Java</button>
+              <button class="skill-pill" data-skill="JavaScript">JavaScript</button>
+              <button class="skill-pill" data-skill="Python">C</button>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <span>Data Analytics & Visualization</span>
+            </h3>
+            <div class="skill-pills-wrap">
+              <button class="skill-pill" data-skill="Python">Pandas</button>
+              <button class="skill-pill" data-skill="Streamlit">Plotly</button>
+              <button class="skill-pill" data-skill="Streamlit">Streamlit</button>
+              <button class="skill-pill" data-skill="Power BI">Power BI</button>
+              <button class="skill-pill" data-skill="Power BI">Excel (Advanced)</button>
+              <button class="skill-pill" data-skill="Python">ETL Processes</button>
+              <button class="skill-pill" data-skill="Python">Data Cleaning & Reporting</button>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              <span>Generative AI & RAG Engineering</span>
+            </h3>
+            <div class="skill-pills-wrap">
+              <button class="skill-pill" data-skill="Google Gemini 3.5 Flash">Google Gemini 3.5 Flash</button>
+              <button class="skill-pill" data-skill="Hybrid RAG & RRF">Hybrid RAG (Vector + BM25)</button>
+              <button class="skill-pill" data-skill="Hybrid RAG & RRF">ChromaDB</button>
+              <button class="skill-pill" data-skill="Hybrid RAG & RRF">Reciprocal Rank Fusion (RRF)</button>
+              <button class="skill-pill" data-skill="Cross-Encoder Neural Reranking">Cross-Encoder Neural Reranking</button>
+              <button class="skill-pill" data-skill="5-Agent Architecture">5-Agent Multi-Agent Loop</button>
+              <button class="skill-pill" data-skill="Google Gemini 3.5 Flash">Claim-Level Citations</button>
+              <button class="skill-pill" data-skill="Cross-Encoder Neural Reranking">MRR & Precision@k</button>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              <span>Databases & Backend Systems</span>
+            </h3>
+            <div class="skill-pills-wrap">
+              <button class="skill-pill" data-skill="SQL">MySQL</button>
+              <button class="skill-pill" data-skill="SQL">DBMS Architecture</button>
+              <button class="skill-pill" data-skill="SQL">Query Optimization</button>
+              <button class="skill-pill" data-skill="SQL">Data Modeling</button>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-cat-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              <span>Core Concepts & Tools</span>
+            </h3>
+            <div class="skill-pills-wrap">
+              <button class="skill-pill" data-skill="DSA & OOP">DSA (Data Structures)</button>
+              <button class="skill-pill" data-skill="Java">Object-Oriented Programming (OOP)</button>
+              <button class="skill-pill" data-skill="Machine Learning">Machine Learning</button>
+              <button class="skill-pill" data-skill="JavaScript">Git & GitHub</button>
+              <button class="skill-pill" data-skill="Machine Learning">Cloud Computing (OCI)</button>
+              <button class="skill-pill" data-skill="Java">Agile Methodologies</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sticky Interactive Terminal Code Inspector -->
+        <div class="code-inspector-terminal reveal-init">
+          <div class="terminal-header">
+            <div class="preview-dots">
+              <span class="preview-dot red"></span>
+              <span class="preview-dot yellow"></span>
+              <span class="preview-dot green"></span>
+            </div>
+            <span class="terminal-title">skill_inspector.py</span>
+          </div>
+
+          <div class="terminal-body">
+            <div class="snippet-meta">
+              <div class="snippet-name" id="inspector-title">Python (Pandas, Plotly, Streamlit, NumPy)</div>
+              <div class="snippet-desc" id="inspector-desc">Applied in Ferry Analytics & Music Dashboards for ETL pipelines and statistical modeling.</div>
+            </div>
+
+            <pre class="snippet-code" id="inspector-code"># Production Data Pipeline & Dynamic Metric Aggregation
+import pandas as pd
+import numpy as np
+
+def compute_terminal_kpis(df: pd.DataFrame) -> pd.DataFrame:
+    df['congestion_idx'] = (df['pax_flow'] / df['capacity']) * 100
+    df['peak_oli'] = np.where(df['congestion_idx'] > 85, 1.25, 0.85)
+    return df.groupby('terminal').agg({'congestion_idx': 'mean', 'peak_oli': 'max'})</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Milestones -->
+  <section id="experience">
+    <div class="container">
+      <span class="section-tag">Career Journey</span>
+      <h2 class="section-title">Experience & Education</h2>
+      <p class="section-subtitle">Hands-on industry internship experience combined with rigorous Computer Science engineering fundamentals.</p>
+
+      <div class="timeline-grid">
+        <!-- Experience Column -->
+        <div class="reveal-init">
+          <h3 class="timeline-column-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #00f2fe;"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <span>Professional Experience</span>
+          </h3>
+
+          <div class="timeline-stream">
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">May 2026 – July 2026 · Remote</div>
+                <h4 class="timeline-role">Data Analytics Intern</h4>
+                <div class="timeline-org">Unified Mentor Pvt. Ltd.</div>
+
+                <ul class="timeline-bullets">
+                  <li>Engineered automated ETL data cleaning and transformation pipelines using Python (Pandas) and SQL, processing 50,000+ records across multi-source datasets with 99%+ data accuracy.</li>
+                  <li>Developed 4+ interactive Power BI and Excel executive dashboards with custom DAX measures to monitor 15+ KPIs, reducing reporting latency by 30%.</li>
+                  <li>Formulated optimized SQL queries, joins, and database views to analyze business trends, assisting cross-functional teams in data-backed decision-making.</li>
+                  <li>Collaborated in an Agile workflow with mentors and data engineering teams to troubleshoot data discrepancies and build predictive performance tracking reports.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div class="reveal-init">
+          <h3 class="timeline-column-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-cyan);"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>Academic Background</span>
+          </h3>
+
+          <div class="timeline-stream">
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">2024 – Present</div>
+                <h4 class="timeline-role">B.Tech in Computer Science Engineering (AI/ML)</h4>
+                <div class="timeline-org">Babu Banarsi Das Institute of Technology and Management (BBDITM), Lucknow</div>
+                <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.5rem;">
+                  Core coursework: AI & Machine Learning, Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Computer Networks.
+                </p>
+                <span class="grade-badge">CGPA — 7.1 (Till 4th Sem)</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">May 2023</div>
+                <h4 class="timeline-role">Class 12 (ISC) — Science Stream</h4>
+                <div class="timeline-org">Christ Church College, Lucknow</div>
+                <span class="grade-badge">Percentage — 83.1%</span>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-node"></div>
+              <div class="timeline-card">
+                <div class="timeline-date">July 2021</div>
+                <h4 class="timeline-role">Class 10 (ICSE)</h4>
+                <div class="timeline-org">Christ Church College, Lucknow</div>
+                <span class="grade-badge">Percentage — 89.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Extracurricular Wall -->
+  <section id="certifications">
+    <div class="container">
+      <span class="section-tag">Recognitions</span>
+      <h2 class="section-title">Certifications & Activities</h2>
+      <p class="section-subtitle">Verified credentials, hackathon participation, and technical community involvements.</p>
+
+      <div class="certs-grid reveal-init">
+        <div class="cert-card">
+          <div class="cert-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+          </div>
+          <div>
+            <h4 class="cert-title">Oracle Cloud Infrastructure 2025 AI Foundations Associate</h4>
+            <div class="cert-issuer">Oracle</div>
+          </div>
+          <div class="cert-date">Issued 2025</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div>
+            <h4 class="cert-title">Solution Challenge 2026: Build with AI</h4>
+            <div class="cert-issuer">Hack2Skill (H2S) Prototype Submission Participant</div>
+          </div>
+          <div class="cert-date">July 2026</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <div>
+            <h4 class="cert-title">Tata GenAI Powered Data Analytics Job Simulation</h4>
+            <div class="cert-issuer">Forage</div>
+          </div>
+          <div class="cert-date">Credential Verified</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <div>
+            <h4 class="cert-title">Deloitte Australia Data Analytics Job Simulation</h4>
+            <div class="cert-issuer">Forage</div>
+          </div>
+          <div class="cert-date">Credential Verified</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div>
+            <h4 class="cert-title">UI/UX Design Certification & Lab Participant</h4>
+            <div class="cert-issuer">NIELIT</div>
+          </div>
+          <div class="cert-date">October 2025</div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+          </div>
+          <div>
+            <h4 class="cert-title">Google Developer Program Member</h4>
+            <div class="cert-issuer">Google for Developers Community</div>
+          </div>
+          <div class="cert-date">Active Member</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Contact Hub -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-tag">Let's Connect</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Interested in collaborating, hiring for software developer or data analyst roles, or discussing innovative tech projects?</p>
+
+      <div class="contact-grid">
+        <!-- Direct Contact Details Card -->
+        <div class="contact-info-card reveal-init">
+          <h3 style="font-size: 1.25rem;">Direct Contacts</h3>
+
+          <!-- Email Item -->
+          <div class="contact-direct-item">
+            <div class="direct-details">
+              <div class="direct-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="direct-label">Email Address</div>
+                <a href="mailto:arslaanalam700@example.com" class="direct-value">arslaanalam700@example.com</a>
+              </div>
+            </div>
+            <button class="copy-btn" data-copy="arslaanalam700@example.com">Copy</button>
+          </div>
+
+          <!-- Phone Item -->
+          <div class="contact-direct-item">
+            <div class="direct-details">
+              <div class="direct-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="direct-label">Phone / WhatsApp</div>
+                <a href="tel:+918881607359" class="direct-value">+91 8881607359</a>
+              </div>
+            </div>
+            <button class="copy-btn" data-copy="+918881607359">Copy</button>
+          </div>
+
+          <!-- Location Item -->
+          <div class="contact-direct-item">
+            <div class="direct-details">
+              <div class="direct-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="direct-label">Location</div>
+                <div class="direct-value">Lucknow, Uttar Pradesh, India</div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="font-size: 0.85rem; color: var(--text-secondary);">Resume Files</div>
+            <a href="resume_ats_optimized.html" target="_blank" class="btn btn-primary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+              <span>View ATS-Optimized Resume (96/100)</span>
+            </a>
+            <a href="Arslaan_Alam_Resume.pdf" download="Arslaan_Alam_Resume.pdf" class="btn btn-secondary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Original PDF</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-card reveal-init">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1.25rem;">Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Hi Arslaan, I'd like to discuss an opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <div style="font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">Arslaan Alam</div>
+        <div>Crafted with clean code, dynamic physics & analytical precision. &copy; 2026</div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LinkedIn Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://leetcode.com" target="_blank" rel="noopener noreferrer" class="icon-btn" title="LeetCode Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Command Palette Modal (Cmd+K) -->
+  <div class="cmd-modal-backdrop" id="cmd-modal-backdrop">
+    <div class="cmd-modal">
+      <div class="cmd-search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-muted);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="cmd-search-input" class="cmd-search-input" placeholder="Type a command or jump to section..." autocomplete="off">
+      </div>
+
+      <ul class="cmd-results-list" id="cmd-results-list">
+        <!-- Injected via JavaScript -->
+      </ul>
+
+      <div class="cmd-modal-footer">
+        <div><span>Navigate: </span><kbd>↑</kbd> <kbd>↓</kbd></div>
+        <div><span>Select: </span><kbd>↵ Enter</kbd></div>
+        <div><span>Close: </span><kbd>ESC</kbd></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts with Cache-Busters -->
+  <script src="interactive-canvas.js?v=20260902_clean_hud_05"></script>
+  <script src="data-playground.js?v=20260902_clean_hud_05"></script>
+  <script src="main.js?v=20260902_clean_hud_05"></script>
+</body>
+</html>

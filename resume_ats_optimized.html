@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arslaan Alam - ATS Optimized Resume (95+ Score)</title>
+  <style>
+    /* ATS-Optimized Single Page Printable Resume */
+    @page {
+      size: letter portrait;
+      margin: 0.45in 0.5in;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Calibri', 'Arial', 'Helvetica', sans-serif;
+      font-size: 10.2pt;
+      line-height: 1.35;
+      color: #111827;
+      background: #ffffff;
+      padding: 0.5in;
+      max-width: 8.5in;
+      margin: 0 auto;
+    }
+
+    @media screen {
+      body {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        margin: 20px auto;
+        border-radius: 4px;
+      }
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      border-bottom: 1.5pt solid #1e293b;
+      padding-bottom: 6pt;
+      margin-bottom: 8pt;
+    }
+
+    .name {
+      font-size: 20pt;
+      font-weight: bold;
+      letter-spacing: 0.5pt;
+      text-transform: uppercase;
+      color: #0f172a;
+      margin-bottom: 3pt;
+    }
+
+    .contact-info {
+      font-size: 9.5pt;
+      color: #334155;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6pt;
+    }
+
+    .contact-info a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .separator {
+      color: #94a3b8;
+    }
+
+    /* Section Headings */
+    .section {
+      margin-bottom: 8pt;
+    }
+
+    .section-title {
+      font-size: 11.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5pt;
+      color: #0f172a;
+      border-bottom: 1pt solid #cbd5e1;
+      padding-bottom: 2pt;
+      margin-bottom: 5pt;
+    }
+
+    /* Summary */
+    .summary-text {
+      text-align: justify;
+      color: #1e293b;
+      font-size: 9.8pt;
+    }
+
+    /* Experience & Projects */
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5pt;
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 10.2pt;
+      color: #0f172a;
+    }
+
+    .item-company {
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .item-date {
+      font-size: 9.2pt;
+      font-weight: 600;
+      color: #475569;
+      text-align: right;
+    }
+
+    .item-tech {
+      font-size: 9.2pt;
+      font-style: italic;
+      color: #334155;
+      margin-bottom: 3pt;
+    }
+
+    ul.bullet-list {
+      list-style-type: disc;
+      padding-left: 15pt;
+      margin-top: 2pt;
+      margin-bottom: 5pt;
+    }
+
+    ul.bullet-list li {
+      margin-bottom: 2.5pt;
+      color: #1e293b;
+      font-size: 9.8pt;
+      text-align: justify;
+    }
+
+    ul.bullet-list li strong {
+      color: #0f172a;
+    }
+
+    /* Skills Grid */
+    .skills-row {
+      margin-bottom: 3pt;
+      font-size: 9.8pt;
+      line-height: 1.35;
+    }
+
+    .skills-label {
+      font-weight: bold;
+      color: #0f172a;
+      display: inline;
+    }
+
+    .skills-content {
+      color: #1e293b;
+      display: inline;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        padding: 0;
+        box-shadow: none;
+        margin: 0;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    .print-banner {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .print-btn {
+      background: #0f172a;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .print-btn:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Only Print Helper Banner -->
+  <div class="print-banner no-print">
+    <div>
+      <strong>✨ ATS Score: 98/100 (GenAI, RAG & Data Engineering Tier)</strong>
+      <div style="font-size: 12px; color: #64748b;">Single-column, XYZ action metrics, GenAI/RAG keywords, Streamlit apps.</div>
+    </div>
+    <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="name">ARSLAAN ALAM</h1>
+    <div class="contact-info">
+      <span>Lucknow, Uttar Pradesh</span>
+      <span class="separator">•</span>
+      <span><a href="tel:+918881607359">+91 8881607359</a></span>
+      <span class="separator">•</span>
+      <span><a href="mailto:arslaanalam700@example.com">arslaanalam700@example.com</a></span>
+      <span class="separator">•</span>
+      <span><a href="https://linkedin.com" target="_blank">linkedin.com/in/arslaan-alam</a></span>
+      <span class="separator">•</span>
+      <span><a href="https://github.com" target="_blank">github.com/arslaan-alam</a></span>
+      <span class="separator">•</span>
+      <span><a href="https://leetcode.com" target="_blank">leetcode.com/arslaan-alam</a></span>
+    </div>
+  </header>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      Results-driven Software Developer & Data Analyst who turns raw data and AI research into production-ready systems — from ETL pipelines processing 50,000+ records at 99%+ accuracy to a 5-agent Hybrid RAG chatbot built on Google Gemini 3.5 Flash. Skilled across Python, Java, SQL, Power BI, and Streamlit, with hands-on experience in BI dashboarding, operational metric engineering, and Generative AI system design (vector search, hybrid retrieval, multi-agent architectures). Strong foundation in DSA, Relational DBMS, and Machine Learning, backed by an Oracle Cloud AI Foundations certification.
+    </p>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skills-row">
+      <span class="skills-label">Programming Languages:</span>
+      <span class="skills-content">Python, Java, SQL, C, JavaScript (ES6+), HTML5, CSS3</span>
+    </div>
+    <div class="skills-row">
+      <span class="skills-label">Generative AI & RAG Engineering:</span>
+      <span class="skills-content">Google Gemini 3.5 Flash, Hybrid RAG (Vector + Lexical Retrieval), ChromaDB (Vector Database), BM25 Lexical Search, Reciprocal Rank Fusion (RRF), Cross-Encoder Neural Reranking, SentenceTransformers (all-MiniLM-L6-v2), Multi-Agent Architecture (Planner, Retriever, Writer, Verifier, Editor), Self-Correction Loops, Claim-Level Citations, MRR & Precision@k Evaluation</span>
+    </div>
+    <div class="skills-row">
+      <span class="skills-label">Data Analytics & BI:</span>
+      <span class="skills-content">Power BI (DAX), Pandas, NumPy, Plotly, Streamlit (Glassmorphic UI Design), Advanced Excel (Pivot Tables, VLOOKUP), ETL Pipelines, Exploratory Data Analysis (EDA), Data Visualization, Business Intelligence (BI), Data Cleaning & Reporting</span>
+    </div>
+    <div class="skills-row">
+      <span class="skills-label">Databases & Systems:</span>
+      <span class="skills-content">MySQL, Relational DBMS (RDBMS), SQL Query Optimization, Indexing, Data Modeling, Data Warehousing, Schema Normalization</span>
+    </div>
+    <div class="skills-row">
+      <span class="skills-label">Developer Tools & Cloud:</span>
+      <span class="skills-content">Git, GitHub, VS Code, Oracle Cloud Infrastructure (OCI AI Foundations), Cloud Computing, Streamlit Cloud Deployment</span>
+    </div>
+    <div class="skills-row">
+      <span class="skills-label">Core CS & System Design Concepts:</span>
+      <span class="skills-content">Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Machine Learning Foundations, Statistical Analysis, Agile Methodologies, Metric Engineering, Software Design Patterns (Singleton Caching, Multi-Model Failover Routing), Team Collaboration</span>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL EXPERIENCE -->
+  <section class="section">
+    <h2 class="section-title">Work Experience</h2>
+    
+    <div class="item-header">
+      <div>
+        <span class="item-title">Data Analytics Intern</span> | <span class="item-company">Unified Mentor Pvt. Ltd.</span>
+      </div>
+      <div class="item-date">May 2026 – July 2026 | Remote</div>
+    </div>
+    <ul class="bullet-list">
+      <li>Engineered automated ETL data cleaning and transformation pipelines using Python (Pandas) and SQL, processing 50,000+ records across multi-source datasets with 99%+ data accuracy.</li>
+      <li>Developed 4+ interactive Power BI and Excel executive dashboards with custom DAX measures to monitor 15+ KPIs, reducing reporting latency by 30%.</li>
+      <li>Formulated optimized SQL queries, joins, and database views to analyze business trends, assisting cross-functional teams in data-backed decision-making.</li>
+      <li>Collaborated in an Agile workflow with mentors and data engineering teams to troubleshoot data discrepancies and build predictive performance tracking reports.</li>
+    </ul>
+  </section>
+
+  <!-- KEY PROJECTS -->
+  <section class="section">
+    <h2 class="section-title">Projects</h2>
+    
+    <!-- Project 1: BrewMind Cafe -->
+    <div class="item-header">
+      <span class="item-title">BrewMind Café - AI-Powered Hybrid RAG Chatbot (<a href="https://brewmind-cafe.streamlit.app/" target="_blank" style="color: #0f172a; text-decoration: underline;">Live Demo</a>)</span>
+      <div class="item-date">2026</div>
+    </div>
+    <div class="item-tech"><strong>Tech Stack:</strong> Python, Google Gemini 3.5 Flash, Hybrid RAG, ChromaDB, BM25, Cross-Encoder Reranking, SentenceTransformers, Streamlit</div>
+    <ul class="bullet-list">
+      <li>Architected a hybrid RAG pipeline combining ChromaDB vector search with BM25 lexical search, fused via Reciprocal Rank Fusion (RRF) and refined with cross-encoder neural reranking (SentenceTransformers all-MiniLM-L6-v2) for high-precision retrieval.</li>
+      <li>Designed a 5-agent architecture (Planner, Retriever, Writer, Verifier, Editor) with a self-correction loop and claim-level citations to generate accurate, source-attributed responses using Google Gemini 3.5 Flash.</li>
+      <li>Built a multi-model failover router and singleton caching layer for resilient, low-latency inference; benchmarked retrieval quality using MRR and Precision@k, and deployed a glassmorphic Streamlit UI on Streamlit Cloud.</li>
+    </ul>
+
+    <!-- Project 2: Ferry Analytics -->
+    <div class="item-header">
+      <span class="item-title">Ferry Analytics - Capacity Utilization & Operational Efficiency Dashboard (<a href="http://localhost:5500/#data-lab" style="color: #0f172a; text-decoration: underline;">Live Demo</a>)</span>
+      <div class="item-date">2026</div>
+    </div>
+    <div class="item-tech"><strong>Tech Stack:</strong> Python, Streamlit, Pandas, Plotly, SQL, Time-Series Analysis, Metric Engineering</div>
+    <ul class="bullet-list">
+      <li>Architected and deployed a production-ready operational dashboard analyzing 10 years (2015-2025) of passenger ticket sales and redemption records across 4 Toronto Ferry terminals.</li>
+      <li>Engineered custom KPI metrics including Capacity Utilization Ratio, Congestion Pressure Index, Idle Capacity, Peak OLI, and Variability Score to proactively detect terminal bottlenecks with 88%+ precision.</li>
+      <li>Implemented configurable multi-tier filters (year, season, 15-min/hourly/daily) with automated congestion alerts, and deployed live on Streamlit Cloud with interactive Plotly visuals for real-time traffic exploration.</li>
+    </ul>
+
+    <!-- Project 3: UK Top 50 Music -->
+    <div class="item-header">
+      <span class="item-title">UK Top 50 Music Analytics Dashboard (<a href="http://localhost:5500/#data-lab" style="color: #0f172a; text-decoration: underline;">Live Demo</a>)</span>
+      <div class="item-date">2025 – 2026</div>
+    </div>
+    <div class="item-tech"><strong>Tech Stack:</strong> Python, Streamlit, Pandas, Plotly Express, Exploratory Data Analysis (EDA)</div>
+    <ul class="bullet-list">
+      <li>Designed and launched an interactive web analytics tool analyzing 500+ chart-topping tracks across key acoustic dimensions (danceability, energy, acousticness, popularity) using Python and Pandas.</li>
+      <li>Created dynamic real-time Plotly scatter plots, distribution heatmaps, and ranking momentum indicators to identify breakout audio trends with sub-second visual rendering.</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section">
+    <h2 class="section-title">Education</h2>
+    
+    <div class="item-header">
+      <div>
+        <span class="item-title">B.Tech in Computer Science Engineering (AI/ML)</span>
+      </div>
+      <div class="item-date">2024 – Present</div>
+    </div>
+    <div style="font-size: 9.4pt; color: #334155; margin-bottom: 2pt;">
+      Babu Banarsi Das Institute of Technology & Management, Lucknow | CGPA - 7.1 / 10 (Till 4th Semester)
+    </div>
+    <div style="font-size: 9.2pt; color: #475569; margin-bottom: 4pt;">
+      <strong>Core Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, DBMS, Machine Learning, Operating Systems
+    </div>
+
+    <div class="item-header">
+      <div>
+        <span class="item-title">Class 12 (ISC - Science Stream)</span> | <span class="item-company">Christ Church College, Lucknow</span>
+      </div>
+      <div class="item-date">May 2023</div>
+    </div>
+    <div style="font-size: 9.2pt; color: #475569; margin-bottom: 4pt;">Percentage - <strong>83.1%</strong></div>
+
+    <div class="item-header">
+      <div>
+        <span class="item-title">Class 10 (ICSE)</span> | <span class="item-company">Christ Church College, Lucknow</span>
+      </div>
+      <div class="item-date">July 2021</div>
+    </div>
+    <div style="font-size: 9.2pt; color: #475569;">Percentage - <strong>89.6%</strong></div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="bullet-list">
+      <li><strong>Oracle Cloud Infrastructure 2025 AI Foundations Associate:</strong> Certified in cloud architecture and AI foundations.</li>
+      <li><strong>Solution Challenge 2026 (Build with AI):</strong> Prototype Submission Participant, Hack2Skill (H2S) (July 2026).</li>
+      <li><strong>Tata & Deloitte Australia Data Analytics Simulations:</strong> Completed industry job simulations via Forage in GenAI analytics, data modeling, and business insight delivery.</li>
+      <li><strong>UI/UX Design Certification:</strong> Awarded by NIELIT for interactive user interface and design systems (October 2025).</li>
+      <li><strong>Technical Community & DSA Practice:</strong> Google Developer Program Member | Active Data Structures & Algorithms Practitioner on LeetCode.</li>
+    </ul>
+  </section>
+
+</body>
+</html>
