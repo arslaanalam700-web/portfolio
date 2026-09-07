@@ -131,8 +131,8 @@
     rainDrops = [];
     indigoMotes = [];
     const isMobile = window.innerWidth < 768;
-    const rainCount = isMobile ? 30 : 65;
-    const moteCount = isMobile ? 25 : 50;
+    const rainCount = isMobile ? 18 : 65;
+    const moteCount = isMobile ? 16 : 50;
 
     for (let i = 0; i < rainCount; i++) rainDrops.push(new RainDrop());
     for (let i = 0; i < moteCount; i++) indigoMotes.push(new IndigoMote());

@@ -445,19 +445,84 @@ app = <span class="code-func">FastAPI</span>(title=<span class="code-string">"Br
 
   // --- Command Palette (Cmd+K / Ctrl+K) ---
   const commands = [
-    { label: 'Jump to Featured Projects', section: '#projects', icon: '📁', badge: 'Section' },
-    { label: 'Explore Interactive Data Lab', section: '#data-lab', icon: '🧪', badge: 'Playground' },
-    { label: 'View Technical Skills & Code Inspector', section: '#skills', icon: '⚡', badge: 'Section' },
-    { label: 'View Experience & Education Milestones', section: '#experience', icon: '🎓', badge: 'Timeline' },
-    { label: 'View Certifications & Achievements', section: '#certifications', icon: '🏆', badge: 'Section' },
-    { label: 'Contact Arslaan (Direct Message)', section: '#contact', icon: '✉️', badge: 'Action' },
-    { label: 'Download Resume PDF', action: 'download_resume', icon: '📄', badge: 'Download' },
-    { label: 'View ATS Optimized Resume (96+ Score)', action: 'view_ats_resume', icon: '✨', badge: 'ATS Resume' },
-    { label: 'Launch BrewMind Cafe (Live Streamlit App)', action: 'open_brewmind', icon: '☕', badge: 'Live App' },
-    { label: 'Copy Email Address (arslaanalam700@example.com)', action: 'copy_email', icon: '📋', badge: 'Copy' },
-    { label: 'Copy Phone Number (+91 8881607359)', action: 'copy_phone', icon: '📞', badge: 'Copy' },
-    { label: 'Toggle Dark / Light Mode', action: 'toggle_theme', icon: '🌓', badge: 'Theme' },
-    { label: 'Toggle Audio Sound Effects', action: 'toggle_sound', icon: '🔊', badge: 'Sound' }
+    { 
+      label: 'Jump to Featured Projects', 
+      section: '#projects', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>', 
+      badge: 'Section' 
+    },
+    { 
+      label: 'Explore Interactive Data Lab', 
+      section: '#data-lab', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"></path></svg>', 
+      badge: 'Sandbox' 
+    },
+    { 
+      label: 'View Technical Skills & Code Inspector', 
+      section: '#skills', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>', 
+      badge: 'Skills' 
+    },
+    { 
+      label: 'View Experience & Education Milestones', 
+      section: '#experience', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>', 
+      badge: 'Timeline' 
+    },
+    { 
+      label: 'View Certifications & Achievements', 
+      section: '#certifications', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>', 
+      badge: 'Verified' 
+    },
+    { 
+      label: 'Contact Arslaan Alam', 
+      section: '#contact', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>', 
+      badge: 'Contact' 
+    },
+    { 
+      label: 'Download Resume PDF', 
+      action: 'download_resume', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>', 
+      badge: 'PDF' 
+    },
+    { 
+      label: 'Open ATS-Optimized Resume', 
+      action: 'view_ats_resume', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>', 
+      badge: 'Web' 
+    },
+    { 
+      label: 'Launch BrewMind Cafe (Streamlit Application)', 
+      action: 'open_brewmind', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>', 
+      badge: 'Live App' 
+    },
+    { 
+      label: 'Copy Email (arslaanalam700@example.com)', 
+      action: 'copy_email', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>', 
+      badge: 'Clipboard' 
+    },
+    { 
+      label: 'Copy Phone (+91 8881607359)', 
+      action: 'copy_phone', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>', 
+      badge: 'Clipboard' 
+    },
+    { 
+      label: 'Toggle Theme (Dark / Light)', 
+      action: 'toggle_theme', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>', 
+      badge: 'Interface' 
+    },
+    { 
+      label: 'Toggle Audio Feedback', 
+      action: 'toggle_sound', 
+      icon: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>', 
+      badge: 'Audio' 
+    }
   ];
 
   let selectedCmdIndex = 0;
@@ -495,7 +560,7 @@ app = <span class="code-func">FastAPI</span>(title=<span class="code-string">"Br
       li.className = `cmd-item ${idx === selectedCmdIndex ? 'selected' : ''}`;
       li.innerHTML = `
         <div class="cmd-item-left">
-          <span>${cmd.icon}</span>
+          <span style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; color: var(--accent-cyan); flex-shrink: 0;">${cmd.icon}</span>
           <span>${cmd.label}</span>
         </div>
         <span class="cmd-item-badge">${cmd.badge}</span>
@@ -603,6 +668,84 @@ app = <span class="code-func">FastAPI</span>(title=<span class="code-string">"Br
       renderCmdResults();
     });
   }
+
+  // --- Mobile Navigation Drawer Controller ---
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNavDrawer = document.getElementById('mobile-nav-drawer');
+  const mobileNavBackdrop = document.getElementById('mobile-nav-backdrop');
+  const mobileDrawerClose = document.getElementById('mobile-drawer-close');
+  const mobileSearchBtn = document.getElementById('mobile-search-btn');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  function openMobileMenu() {
+    if (!mobileNavDrawer || !mobileNavBackdrop) return;
+    mobileNavDrawer.classList.add('active');
+    mobileNavBackdrop.classList.add('active');
+    mobileNavDrawer.setAttribute('aria-hidden', 'false');
+    mobileNavBackdrop.setAttribute('aria-hidden', 'false');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.classList.add('is-active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'true');
+    }
+    document.body.style.overflow = 'hidden';
+    window.PortfolioAudio.tick();
+  }
+
+  function closeMobileMenu() {
+    if (!mobileNavDrawer || !mobileNavBackdrop) return;
+    mobileNavDrawer.classList.remove('active');
+    mobileNavBackdrop.classList.remove('active');
+    mobileNavDrawer.setAttribute('aria-hidden', 'true');
+    mobileNavBackdrop.setAttribute('aria-hidden', 'true');
+    if (mobileMenuBtn) {
+      mobileMenuBtn.classList.remove('is-active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    }
+    document.body.style.overflow = '';
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+      if (mobileNavDrawer && mobileNavDrawer.classList.contains('active')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+  }
+
+  if (mobileDrawerClose) {
+    mobileDrawerClose.addEventListener('click', () => {
+      closeMobileMenu();
+      window.PortfolioAudio.pop();
+    });
+  }
+
+  if (mobileNavBackdrop) {
+    mobileNavBackdrop.addEventListener('click', closeMobileMenu);
+  }
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+      window.PortfolioAudio.pop();
+    });
+  });
+
+  if (mobileSearchBtn) {
+    mobileSearchBtn.addEventListener('click', () => {
+      closeMobileMenu();
+      setTimeout(openCmdPalette, 200);
+      window.PortfolioAudio.pop();
+    });
+  }
+
+  // Close on ESC
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileNavDrawer && mobileNavDrawer.classList.contains('active')) {
+      closeMobileMenu();
+    }
+  });
 
   // --- Copy Buttons in Contact Hub ---
   const copyButtons = document.querySelectorAll('.copy-btn');

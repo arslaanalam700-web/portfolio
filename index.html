@@ -15,11 +15,11 @@
   <meta property="og:description" content="Explore interactive dashboards, real-world data analytics simulations, and software engineering projects by Arslaan Alam.">
   <meta property="og:type" content="website">
 
-  <!-- Favicon Icon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <!-- Professional SVG Monogram Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f1422'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='14' fill='%2300f2fe'>AA</text></svg>">
 
   <!-- Cache-Busted Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=20260902_aurora_99">
+  <link rel="stylesheet" href="style.css?v=20260907_pro_buttons_08">
   
   <!-- Direct Inline Theme Guarantee (Bypasses all browser caching) -->
   <style id="portfolio-master-theme">
@@ -127,14 +127,30 @@
     html:not([data-theme="light"]) .project-title, [data-theme="dark"] .project-title { color: #ffffff; }
     html:not([data-theme="light"]) .project-desc, [data-theme="dark"] .project-desc { color: #e2e8f0; }
     html:not([data-theme="light"]) .btn-secondary, [data-theme="dark"] .btn-secondary {
-      background: rgba(21, 28, 46, 0.85);
+      background: rgba(21, 28, 46, 0.88);
       color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 6px 20px -4px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    html:not([data-theme="light"]) .btn-secondary:hover, [data-theme="dark"] .btn-secondary:hover {
+      background: rgba(30, 42, 70, 0.95);
+      border-color: rgba(0, 242, 254, 0.6);
+      color: #ffffff;
+      box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.6), 0 0 18px rgba(0, 242, 254, 0.25);
     }
     html:not([data-theme="light"]) .btn-outline, [data-theme="dark"] .btn-outline {
-      background: transparent;
+      background: rgba(255, 255, 255, 0.04);
       color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.35);
+    }
+    html:not([data-theme="light"]) .btn-outline:hover, [data-theme="dark"] .btn-outline:hover {
+      background: rgba(0, 242, 254, 0.1);
+      border-color: #00f2fe;
+      color: #00f2fe;
+      box-shadow: 0 10px 24px -3px rgba(0, 242, 254, 0.38);
     }
 
     /* === ☀️ LIGHT THEME (Pristine Swiss Tech Studio) === */
@@ -277,23 +293,27 @@
       box-shadow: 0 0 8px #0284c7 !important;
     }
     [data-theme="light"] .btn-secondary {
-      background: #ffffff !important;
+      background: rgba(255, 255, 255, 0.96) !important;
       color: #0f172a !important;
-      border: 1px solid rgba(15, 23, 42, 0.16) !important;
+      border: 1px solid rgba(15, 23, 42, 0.14) !important;
+      box-shadow: 0 4px 14px -3px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9) !important;
     }
     [data-theme="light"] .btn-secondary:hover {
-      background: #f1f5f9 !important;
-      border-color: #0284c7 !important;
+      background: #ffffff !important;
+      border-color: rgba(2, 132, 199, 0.5) !important;
+      color: #0284c7 !important;
+      box-shadow: 0 10px 24px -3px rgba(2, 132, 199, 0.18) !important;
     }
     [data-theme="light"] .btn-outline {
       background: transparent !important;
-      color: #0f172a !important;
-      border: 1px solid rgba(15, 23, 42, 0.2) !important;
+      color: #334155 !important;
+      border: 1px solid rgba(15, 23, 42, 0.18) !important;
     }
     [data-theme="light"] .btn-outline:hover {
-      background: rgba(15, 23, 42, 0.05) !important;
+      background: rgba(2, 132, 199, 0.08) !important;
       border-color: #0284c7 !important;
       color: #0284c7 !important;
+      box-shadow: 0 8px 18px -3px rgba(2, 132, 199, 0.18) !important;
     }
     [data-theme="light"] .contact-direct-item {
       background: #f8fafc !important;
@@ -311,13 +331,14 @@
       box-shadow: 0 0 15px rgba(2, 132, 199, 0.2) !important;
     }
     [data-theme="light"] .copy-btn {
-      background: transparent !important;
-      border: 1px solid rgba(15, 23, 42, 0.15) !important;
-      color: #334155 !important;
+      background: rgba(2, 132, 199, 0.08) !important;
+      border: 1px solid rgba(2, 132, 199, 0.3) !important;
+      color: #0284c7 !important;
     }
     [data-theme="light"] .copy-btn:hover {
-      color: #0284c7 !important;
-      border-color: #0284c7 !important;
+      background: #0284c7 !important;
+      color: #ffffff !important;
+      box-shadow: 0 0 14px rgba(2, 132, 199, 0.4) !important;
     }
 
     /* Common elements */
@@ -334,12 +355,23 @@
     .btn-primary {
       background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 45%, #6366f1 100%) !important;
       color: #ffffff !important;
-      border: 1px solid rgba(255, 255, 255, 0.2) !important;
-      box-shadow: 0 10px 28px -6px rgba(0, 242, 254, 0.5) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      box-shadow: 0 8px 24px -4px rgba(0, 242, 254, 0.45), 0 2px 6px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     }
     .btn-primary:hover {
-      background: linear-gradient(135deg, #00d2de 0%, #0284c7 45%, #4f46e5 100%) !important;
+      background: linear-gradient(135deg, #00e0ed 0%, #0ea5e9 45%, #4f46e5 100%) !important;
       color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.6) !important;
+      box-shadow: 0 14px 34px -4px rgba(0, 242, 254, 0.65), 0 4px 12px rgba(99, 102, 241, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6) !important;
+    }
+    [data-theme="light"] .btn-primary {
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 50%, #4f46e5 100%) !important;
+      box-shadow: 0 8px 22px -4px rgba(2, 132, 199, 0.45), 0 2px 6px rgba(15, 23, 42, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+    }
+    [data-theme="light"] .btn-primary:hover {
+      background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 50%, #4338ca 100%) !important;
+      box-shadow: 0 14px 30px -4px rgba(2, 132, 199, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.6) !important;
     }
     .stat-number {
       background: linear-gradient(135deg, #00f2fe 0%, #38bdf8 60%, #818cf8 100%) !important;
@@ -541,6 +573,225 @@
       background: linear-gradient(to bottom, #d97706, #0284c7) !important;
       box-shadow: 0 0 8px rgba(2, 132, 199, 0.5) !important;
     }
+
+    /* Mobile Navigation Drawer & Hamburger Animation */
+    .mobile-menu-toggle {
+      display: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .mobile-menu-toggle .hamburger-icon line {
+      transition: transform 0.25s ease, opacity 0.2s ease;
+      transform-origin: center;
+    }
+
+    .mobile-menu-toggle.is-active .line-top {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    .mobile-menu-toggle.is-active .line-mid {
+      opacity: 0;
+    }
+
+    .mobile-menu-toggle.is-active .line-bot {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .mobile-nav-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 6, 12, 0.78);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      z-index: 9998;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+      pointer-events: none;
+    }
+
+    .mobile-nav-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: min(88vw, 360px);
+      background: rgba(15, 20, 34, 0.96);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-left: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: -15px 0 45px -10px rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem 1.25rem;
+      transform: translateX(100%);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .mobile-nav-drawer.active {
+      transform: translateX(0);
+    }
+
+    .mobile-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 1rem;
+    }
+
+    .mobile-drawer-search {
+      margin-bottom: 1rem;
+    }
+
+    .mobile-search-trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      background: #1c263d;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 0.7rem 0.9rem;
+      border-radius: 12px;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-search-trigger kbd {
+      margin-left: auto;
+      font-family: monospace;
+      font-size: 0.7rem;
+      background: #151c2e;
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      flex: 1;
+    }
+
+    .mobile-nav-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.65rem 0.75rem;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #e2e8f0;
+      background: transparent;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .mobile-nav-link:hover, .mobile-nav-link:active {
+      background: #1c263d;
+      color: #ffffff;
+      border-color: rgba(0, 242, 254, 0.45);
+    }
+
+    .mobile-link-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: #151c2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00f2fe;
+      flex-shrink: 0;
+    }
+
+    .mobile-link-text {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .mobile-link-text .title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+
+    .mobile-link-text .sub {
+      font-size: 0.7rem;
+      color: #94a3b8;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .mobile-drawer-footer {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    /* Light Theme overrides for mobile drawer */
+    [data-theme="light"] .mobile-nav-backdrop {
+      background: rgba(15, 23, 42, 0.45) !important;
+    }
+    [data-theme="light"] .mobile-nav-drawer {
+      background: rgba(255, 255, 255, 0.98) !important;
+      border-left-color: rgba(15, 23, 42, 0.12) !important;
+      box-shadow: -15px 0 40px -10px rgba(15, 23, 42, 0.18) !important;
+    }
+    [data-theme="light"] .mobile-drawer-header {
+      border-bottom-color: rgba(15, 23, 42, 0.1) !important;
+    }
+    [data-theme="light"] .mobile-search-trigger {
+      background: #f1f5f9 !important;
+      border-color: rgba(15, 23, 42, 0.12) !important;
+      color: #334155 !important;
+    }
+    [data-theme="light"] .mobile-search-trigger kbd {
+      background: #ffffff !important;
+      border-color: rgba(15, 23, 42, 0.18) !important;
+    }
+    [data-theme="light"] .mobile-nav-link {
+      color: #334155 !important;
+    }
+    [data-theme="light"] .mobile-nav-link:hover,
+    [data-theme="light"] .mobile-nav-link:active {
+      background: #f1f5f9 !important;
+      color: #0284c7 !important;
+      border-color: rgba(2, 132, 199, 0.3) !important;
+    }
+    [data-theme="light"] .mobile-link-text .title {
+      color: #0f172a !important;
+    }
+    [data-theme="light"] .mobile-link-text .sub {
+      color: #64748b !important;
+    }
+    [data-theme="light"] .mobile-link-icon {
+      background: #e2e8f0 !important;
+      color: #0284c7 !important;
+    }
+    [data-theme="light"] .mobile-drawer-footer {
+      border-top-color: rgba(15, 23, 42, 0.1) !important;
+    }
   </style>
 </head>
 <body>
@@ -628,9 +879,126 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
+
+        <!-- Mobile Navigation Menu Toggle Button -->
+        <button class="icon-btn mobile-menu-toggle" id="mobile-menu-btn" title="Open Navigation Menu" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <svg class="hamburger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" class="line-top"></line>
+            <line x1="3" y1="12" x2="21" y2="12" class="line-mid"></line>
+            <line x1="3" y1="18" x2="21" y2="18" class="line-bot"></line>
+          </svg>
+        </button>
       </div>
     </nav>
   </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation Menu" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="nav-brand">
+        <div class="brand-avatar">AA</div>
+        <span>Arslaan Alam</span>
+      </div>
+      <button class="icon-btn" id="mobile-drawer-close" aria-label="Close Mobile Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-search">
+      <button class="mobile-search-trigger" id="mobile-search-btn" aria-label="Open Search Command Palette">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>Search commands & sections...</span>
+        <kbd>⌘K</kbd>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li>
+        <a href="#projects" class="mobile-nav-link">
+          <div class="mobile-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <div class="mobile-link-text">
+            <span class="title">Featured Projects</span>
+            <span class="sub">BrewMind Café, Ferry Analytics, UK Top 50</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#data-lab" class="mobile-nav-link">
+          <div class="mobile-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"></path></svg>
+          </div>
+          <div class="mobile-link-text">
+            <span class="title">Live Data Lab</span>
+            <span class="sub">Interactive Toronto Ferry Simulator & SQL</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="mobile-nav-link">
+          <div class="mobile-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+          </div>
+          <div class="mobile-link-text">
+            <span class="title">Technical Skills</span>
+            <span class="sub">Python, SQL, Gemini 3.5, Hybrid RAG, Power BI</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#experience" class="mobile-nav-link">
+          <div class="mobile-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          </div>
+          <div class="mobile-link-text">
+            <span class="title">Timeline & Experience</span>
+            <span class="sub">Unified Mentor Internship & B.Tech AI/ML</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#certifications" class="mobile-nav-link">
+          <div class="mobile-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+          </div>
+          <div class="mobile-link-text">
+            <span class="title">Certifications</span>
+            <span class="sub">Oracle OCI AI, Forage Deloitte & Tata GenAI</span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="mobile-nav-link">
+          <div class="mobile-link-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div class="mobile-link-text">
+            <span class="title">Get In Touch</span>
+            <span class="sub">Email, Phone / WhatsApp & Message Form</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+
+    <div class="mobile-drawer-footer">
+      <a href="resume_ats_optimized.html" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        <span>ATS Resume (Score: 98)</span>
+      </a>
+      <a href="Arslaan_Alam_Resume.pdf" download="Arslaan_Alam_Resume.pdf" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>Download Resume PDF</span>
+      </a>
+    </div>
+  </aside>
 
   <!-- Hero Section with Dynamic Interactive Canvas -->
   <section class="hero-section" id="hero">
@@ -657,7 +1025,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M10 2v7.31M14 9.3V1.99M8.5 2h7M14 9.3a6.5 6.5 0 1 1-4 0"></path>
           </svg>
-          <span>Launch Live Data Lab</span>
+          <span>Launch Data Lab</span>
         </a>
 
         <a href="#projects" class="btn btn-secondary">
@@ -665,10 +1033,10 @@
             <polyline points="16 18 22 12 16 6"></polyline>
             <polyline points="8 6 2 12 8 18"></polyline>
           </svg>
-          <span>View Featured Projects</span>
+          <span>View Projects</span>
         </a>
 
-        <a href="resume_ats_optimized.html" target="_blank" class="btn btn-outline" title="Open ATS-Optimized Resume (98/100 Score)">
+        <a href="resume_ats_optimized.html" target="_blank" class="btn btn-outline" title="Open ATS-Optimized Resume (Score: 98/100)">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
             <polyline points="14 2 14 8 20 8"></polyline>
@@ -676,7 +1044,7 @@
             <line x1="16" y1="17" x2="8" y2="17"></line>
             <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
-          <span>ATS Resume (98%)</span>
+          <span>ATS Resume (Score: 98)</span>
         </a>
 
         <a href="Arslaan_Alam_Resume.pdf" download="Arslaan_Alam_Resume.pdf" class="btn btn-outline" title="Download Official Resume PDF">
@@ -685,7 +1053,7 @@
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
           </svg>
-          <span>Download PDF</span>
+          <span>Download Resume PDF</span>
         </a>
       </div>
     </div>
@@ -753,11 +1121,11 @@
             <div class="project-links">
               <a href="https://brewmind-cafe.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                <span>Launch Live Streamlit App ☕</span>
+                <span>Launch Live Application</span>
               </a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <span>GitHub Source</span>
+                <span>Source Code</span>
               </a>
             </div>
           </div>
@@ -776,7 +1144,7 @@
             <div class="preview-interactive-canvas">
               <div style="background: rgba(15, 20, 34, 0.85); border: 1px solid var(--border-medium); border-radius: 8px; padding: 0.85rem; font-family: var(--font-mono); font-size: 0.78rem;">
                 <div style="color: #00f2fe; margin-bottom: 0.35rem; display: flex; align-items: center; justify-content: space-between;">
-                  <span>☕ ADK Concierge Match</span>
+                  <span>ADK Concierge Engine</span>
                   <span style="color: #10b981; font-size: 0.7rem;">Grounded RAG (98%)</span>
                 </div>
                 <div style="color: #ffffff; font-weight: 600; margin-bottom: 0.25rem;">Nitro Silk Cold Brew</div>
@@ -823,11 +1191,11 @@
             <div class="project-links">
               <a href="#data-lab" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>
-                <span>Test Live in Data Lab</span>
+                <span>Interactive Simulation</span>
               </a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <span>GitHub Source</span>
+                <span>Source Code</span>
               </a>
             </div>
           </div>
@@ -899,11 +1267,11 @@
             <div class="project-links">
               <a href="#data-lab" class="btn btn-primary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3l14 9-14 9V3z"/></svg>
-                <span>Explore Music Model</span>
+                <span>Interactive Analytics</span>
               </a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 0.65rem 1.25rem; font-size: 0.85rem;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <span>GitHub Source</span>
+                <span>Source Code</span>
               </a>
             </div>
           </div>
@@ -961,11 +1329,11 @@
         <div class="lab-tabs">
           <button class="lab-tab active" data-lab-tab="ferry">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/></svg>
-            <span>Ferry Congestion Simulator (Toronto 2015–2025)</span>
+            <span>Ferry Traffic & Capacity Simulator</span>
           </button>
           <button class="lab-tab" data-lab-tab="music">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
-            <span>UK Top 50 Music Trend Lab</span>
+            <span>UK Streaming & Acoustic Analytics</span>
           </button>
         </div>
 
@@ -1386,11 +1754,11 @@ def compute_terminal_kpis(df: pd.DataFrame) -> pd.DataFrame:
             <div style="font-size: 0.85rem; color: var(--text-secondary);">Resume Files</div>
             <a href="resume_ats_optimized.html" target="_blank" class="btn btn-primary" style="width: 100%;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-              <span>View ATS-Optimized Resume (96/100)</span>
+              <span>View ATS-Optimized Resume</span>
             </a>
             <a href="Arslaan_Alam_Resume.pdf" download="Arslaan_Alam_Resume.pdf" class="btn btn-secondary" style="width: 100%;">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Download Original PDF</span>
+              <span>Download Resume PDF</span>
             </a>
           </div>
         </div>
@@ -1470,8 +1838,8 @@ def compute_terminal_kpis(df: pd.DataFrame) -> pd.DataFrame:
   <div class="toast-container" id="toast-container"></div>
 
   <!-- Scripts with Cache-Busters -->
-  <script src="interactive-canvas.js?v=20260902_clean_hud_05"></script>
-  <script src="data-playground.js?v=20260902_clean_hud_05"></script>
-  <script src="main.js?v=20260902_clean_hud_05"></script>
+  <script src="interactive-canvas.js?v=20260907_pro_buttons_08"></script>
+  <script src="data-playground.js?v=20260907_pro_buttons_08"></script>
+  <script src="main.js?v=20260907_pro_buttons_08"></script>
 </body>
 </html>
