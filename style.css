@@ -1740,7 +1740,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-group {
-  display: flex;
+  display: flex ;
   flex-direction: column;
   gap: 0.45rem;
   margin-bottom: 1.15rem;
